@@ -42,7 +42,7 @@
 
 ### :pushpin: HTTP CC Attack
 
-- [alienwhatever's Github](https://github.com/alienwhatever/TakeitDown) 에서 칼리 리눅스에 TakeitDown을 다운로드
+- [alienwhatever's Github](https://github.com/alienwhatever/TakeitDown) 에서 칼리 리눅스에 **TakeitDown**을 다운로드
 
 - 대상 웹서버(우분투)의 URL이 hosting이 되어있지 않기 때문에 takeitdown.py에서 header 직접 수정
 
@@ -61,7 +61,28 @@
 
   ![패킷캡쳐결과](https://user-images.githubusercontent.com/55940552/121566342-5eb84700-ca58-11eb-9dfa-b1514df32cb6.PNG) 
 
+<br>
 
+
+
+### :pushpin: Dynamic HTTP Request Flooding
+
+- python3 명령어 실행 시 인수 값으로 아무것도 전달하지 않고 실행한다.
+
+- 내부 코드에서 호스트를 지정해야 한다.
+
+- **python3 dynamic_request.py** 실행
+
+- while문으로 socket send를 계속보내기 떄문에 Ctrl+c 인터럽트로 종료해야 한다.
+
+- 결과
+
+  ![패킷구집](https://user-images.githubusercontent.com/55940552/122660672-11f21000-d1be-11eb-9a4b-af86eae64edb.PNG) 
+
+- 공격 실패
+
+  - 실패 요인은 Internal Server Error로 추정
+  - 여러 페이지를 요청하는 패킷은 캡쳐되는 것으로 확인
 
 ***
 
